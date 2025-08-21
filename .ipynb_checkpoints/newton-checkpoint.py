@@ -5,7 +5,7 @@
 def optimize(x0, func, stop = 1e-4): 
     """Implementation of Newton's method for optimization
 
-    Initiate xt and x. Loop until reach stopping point
+    initiate xt and x. Loop until reach stopping point
     """
     xt = x0 - (deriv(func, x0) / deriv2(func, x0))
     x = x0
